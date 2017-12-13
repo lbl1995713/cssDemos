@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shadow effect(CSS3实现曲线阴影、翘边阴影)</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="wrap effect">
+		<h1>Shadow Effect</h1>
+	</div>
+	<ul class="box">
+		<li><img src="images/photo1.jpg"></li>
+		<li><img src="images/photo2.jpg"></li>
+		<li><img src="images/photo3.jpg"></li>
+	</ul>
+</body>
+</html>
+
+<!-- 实现原理: 在主图形A下边绘制一个带有boder弧度的图形，再讲带有boder弧度的图形B与主图形重叠即可 -->
+<!-- 知识点: before, 
+			after, 
+			position, 
+			transform:skew, 
+			box-shadow -->
+
+<!-- box-shadow: h-shadow v-shadow blur spread color inset -->
+<!-- h-shadow:(required) 水平阴影的位置，允许负值 -->
+<!-- v-shadow:(required) 垂直阴影的位置，允许负值 -->
+<!-- blur: 模糊距离 -->
+<!-- spread: 阴影的尺寸 (很少用) -->
+<!-- color: 阴影的颜色 -->
+<!-- inset: 将外部阴影(outset)改为内部阴影 -->
+
+<!-- 支出ie9+ firefox4 chorme safari 5.5.1 -->
